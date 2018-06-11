@@ -19,9 +19,10 @@
 // const kara   = [180, 250, 721, 880]
 //
 // Should return: [4, 4, 2, 2]
+let ranking = null;
 
 function climbingLeaderboard(scores, kara) {
-  let ranking = [];
+  ranking = [];
   let temp = scores[0];
   let vals = [temp];
   for (var i = 1; i < scores.length; i++) {
@@ -41,3 +42,6 @@ function climbingLeaderboard(scores, kara) {
   }
   return ranking;
 }
+
+climbingLeaderboard([90, 50, 50, 50, 30], [25, 30, 95]);
+console.log('ranking', ranking);
